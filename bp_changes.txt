@@ -1,0 +1,6 @@
+T to C
+A to G
+T to C
+C to T
+C to T
+G to A
