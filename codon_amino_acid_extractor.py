@@ -64,7 +64,8 @@ snps = []
 for line in SNP_locations:
     stripped = line.strip('\n')
     snps.append(stripped)
-
+#print(snps)
+    
 BP_changes = open(sys.argv[4],'r')
 #BP_changes = open('bp_changes.txt', 'r')
 bp_change = []
@@ -113,8 +114,11 @@ for i in snps:
                     new_codon_str = ''.join(new_codon)
                     new_aa = codon_dict.get(new_codon_str)
                     triple += 1
-                    print(basepair,codon,new_codon_str,aa,new_aa,triple)
-                    
+                    codon_output+= str(basepair)+" "+codon+" "+new_codon_str+" "+aa+" "+new_aa+" "+str(triple)
+#                    print(basepair,codon,new_codon_str,aa,new_aa,triple)
+
+
+
                 elif j[6] == '-':
                     actual_lower = lower-1
                     actual_basepair = upper-int(basepair)
@@ -159,6 +163,8 @@ for i in snps:
                         new_aa = codon_dict.get(new_codon_str)
                     triple += 1
                     codon_output+= str(basepair)+" "+codon+" "+new_codon_str+" "+aa+" "+new_aa+" "+str(triple)+"\n"
-                    #print(basepair,codon,new_codon_str,aa,new_aa,triple)
+#                    print(basepair,codon,new_codon_str,aa,new_aa,triple)
+                
+
                 
 print(codon_output)
