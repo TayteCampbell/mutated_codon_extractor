@@ -12,5 +12,6 @@ To use:
 codon_amino_acid_extractor.py GCF_000599545.1_ASM59954v1_genomic.fna GCF_000599545.1_ASM59954v1_genomic.gff locations.txt bp_changes.txt
 
 4. The output will give you basepair location number, the old codon, the new codon (with the mutation), the old amino acid, the new amino acid, and the amino acid position in its respective protein.
-  
+ 
+Note: intergenic mutations will not show up in the output since they do not make any changes to genes.
   
