@@ -1,5 +1,5 @@
 # Mutated Codon Extractor
-This is a personal script I wrote to take a point mutations extracted from a .vcf file and identifies the codons altered by each mutation.
+This is a personal script I wrote that takes point mutations extracted from a .vcf file and identifies the codons altered by each mutation.
 
 
 Disclaimer: this script was written for a specific reference genome and .gff file for Rhodococcus opacus. Minor modifications may be needed to optimize this code for general purpose.
