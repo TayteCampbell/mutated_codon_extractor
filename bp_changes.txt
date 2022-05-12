@@ -1,6 +1,8 @@
-T to C
-A to G
-T to C
-C to T
-C to T
-G to A
+C,A
+G,T
+T,C
+A,G
+T,C
+C,T
+C,T
+G,A
