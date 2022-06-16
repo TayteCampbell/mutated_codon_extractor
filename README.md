@@ -9,6 +9,8 @@ To use:
 2. Extract the bp change from your .vcf file and put the old bp and new bp in the bp_changes file using the format "old bp,new bp".
 3. Run the program with the .fna reference file, .gff reference file, locations file, and bp_changes file. For example:
 
+(Example files are provided and can be used to test the code)
+
 mutation_extractor.py -assembly GCF_000599545.1_ASM59954v1_genomic.fna -gff GCF_000599545.1_ASM59954v1_genomic.gff -loc locations.txt -mut bp_changes.txt
 
 4. The output will give you the chromosome, basepair location number, the old codon, the new codon (with the mutation), the old amino acid, the new amino acid, and the amino acid position in its respective protein.
